@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Services</title>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <!-- TODO: make image larger -->
+    <section class="hero is-medium" style="background-image: url('media/images/charlie-website-temp.heic'); background-size: cover; background-position: center;">
+        <div class="container has-text-left">
+            <h1 class="title has-text-white">Services we offer</h1>
+        </div>
+    </section>
+    <div class="hero-body">
+        <div class="container has-text-left">
+            <h1 class="subtitle has-text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium dolor ipsa ex aperiam vel repudiandae inventore voluptatibus, animi voluptas adipisci iure temporibus id tempora, dolorum accusamus! Corrupti sequi itaque nulla nemo aperiam similique, architecto, nesciunt vero cupiditate quas, maiores ullam!</h1>
+            
+        </div>
+    </div>
+
+</body>
+<div id="footer-placeholder"></div>
+<script>
+// Load the navbar
+    fetch('html-sections/footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+    fetch('html-sections/navbar.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+</script>
+</html>
+<!-- TODO:
+- Photo of Charlie here in Maine (maybe on a hike)
+- Make about section somewhat personal. “I recently moved to Maine with my wonderful (amazing, incredible, funny, smart, talented, gorgeous) wife” Based in Maine but has clients from all over the U.S. from Florida to Indiana?
+- Why do I do what I do?
+Help small business owners (and non-profits?) focus on the things they really care about by taking care of their finances
+What makes me different from other bookkeepers?
+Personal
+Not only technical, but goal oriented and wants to help clients achieve financial goals in their business
+Cares about small businesses
+honest
+- What he has experience working with/in?
+Quickbooks (quickbooks certified pro advisor)
+Paychex
+-->
