@@ -1,4 +1,18 @@
-.hr {
-    width: 80%;
-    border-width: 2px;
+.subtitle,
+.navbar-item,
+h2 {
+    font-family: 'Platypi', serif;
+}
+
+h1 {
+    font-family: 'Electrolize', serif !important;
+}
+
+.button {
+    background-color: white !important;
+    color: black !important;
+}
+
+.button:hover {
+    background-color: #A6D9FF !important;
 }

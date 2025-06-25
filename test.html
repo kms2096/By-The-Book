@@ -2,48 +2,41 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>By the Book</title>
+<title>By the Book Bookkeeping</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-<link rel="stylesheet" href="styles/styles.css"
+<link rel="stylesheet" href="styles/styles.css">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="styles/styles.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<style>
+    .home-page .navbar {
+        background-color: transparent !important;
+    }
 
-<div id="navbar-placeholder"></div>
+    .navbar-item {
+        color: white !important;
+    }
+</style>
+<body class="home-page">
 
-<!-- Mobile burger Javascript -->
-<script>
-// Load the navbar
-    fetch('html-sections/navbar.html')
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-
-            // Reattach burger menu toggle
-            const burger = document.querySelector('.navbar-burger');
-            const menu = document.getElementById(burger.dataset.target);
-            burger.addEventListener('click', () => {
-            burger.classList.toggle('is-active');
-            menu.classList.toggle('is-active');
-            });
-        });
-</script>
-
-<section class="hero is-medium" style="background-image: url('media/images/charlie-website-temp.heic'); background-size: cover; background-position: center;">
+<section class="hero is-medium" style="background-image: url('media/images/charlie-website-temp.heic'); background-size: cover; background-position: center; min-height: 400px;">
+    <div id="navbar-placeholder"></div>
     <div class="hero-body">
-        <div class="container has-text-left">
-        <h1 class="title has-text-white">By the Books</h1>
-        <h2 class="subtitle has-text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, non?</h2>
+        <div class="container has-text-centered">
+            <h1 class="title has-text-white">By the Book Bookkeeping</h1>
         </div>
     </div>
 </section>
 
 <section>
     <div class="hero-body">
-        <div class="container has-text-center">
+        <!--div class="container has-text-center"-->
             <h2 class="title has-text-black">Lorem ipsum dolor sit.</h2>
             <p class="subtitle has-text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa perferendis repellendus nulla quam ad totam minus itaque incidunt, quisquam necessitatibus?</p>
-        </div>
+        <!--/div-->
     </div>
 </section>
 
@@ -83,7 +76,19 @@
 </body>
 <div id="footer-placeholder"></div>
 <script>
-// Load the navbar
+    fetch('html-sections/navbar.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById(burger.dataset.target);
+            burger.addEventListener('click', () => {
+            burger.classList.toggle('is-active');
+            menu.classList.toggle('is-active');
+            });
+        });
+        
     fetch('html-sections/footer.html')
         .then(res => res.text())
         .then(data => {

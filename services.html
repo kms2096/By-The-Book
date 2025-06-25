@@ -4,50 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
     <title>Services</title>
+    <style>
+        .title {
+            color: #92d0ff;
+        }
+    </style>
 </head>
 <body>
-    <div id="navbar-placeholder"></div>
-    <!-- TODO: make image larger -->
-    <section class="hero is-medium" style="background-image: url('media/images/charlie-website-temp.heic'); background-size: cover; background-position: center;">
-        <div class="container has-text-left">
-            <h1 class="title has-text-white">Services we offer</h1>
+    <div id="navbar-placeholder" style="background-color: #A6D9FF;"></div>
+    <section class="hero has-text-centered" style="background-image: url('media/images/charlie-website-temp.heic'); background-size: cover; background-position: center; min-height: 400px;">
+        <div class="hero-body">
+            <div class="container" style="max-width: 50%; margin: 0 auto;">
+                <h1 class="title has-text-white">Services We Offer</h1>
+            </div>
         </div>
     </section>
     <div class="hero-body">
         <div class="container has-text-left">
-            <h1 class="subtitle has-text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium dolor ipsa ex aperiam vel repudiandae inventore voluptatibus, animi voluptas adipisci iure temporibus id tempora, dolorum accusamus! Corrupti sequi itaque nulla nemo aperiam similique, architecto, nesciunt vero cupiditate quas, maiores ullam!</h1>
-            
+            <h1 class="title">Transaction Categorization & Data Entry</h1>
+            <h2 class="subtitle has-text-black">Accurate entry and organization of your business transactions in QuickBooks Online.</h2>
+            <br>
+            <h1 class="title">Bank & Credit Card Reconciliation</h1>
+            <h2 class="subtitle has-text-black">Assistance in reconciling your accounts to ensure your records match your statements.</h2>
+            <br>
+            <h1 class="title">Financial Organization & Reporting</h1>
+            <h2 class="subtitle has-text-black">Basic financial reports and organization to help simplify tax preparation.</h2>
+            <br>
+            <h1 class="title">Bookkeeping Consulting</h1>
+            <h2 class="subtitle has-text-black">Guidance on setting up your business finances and bookkeeping best practices to keep things running smoothly.</h2>
+            <br>
         </div>
     </div>
 
 </body>
 <div id="footer-placeholder"></div>
 <script>
-// Load the navbar
+    fetch('html-sections/navbar.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById(burger.dataset.target);
+            burger.addEventListener('click', () => {
+            burger.classList.toggle('is-active');
+            menu.classList.toggle('is-active');
+            });
+        });
+        
     fetch('html-sections/footer.html')
         .then(res => res.text())
         .then(data => {
             document.getElementById('footer-placeholder').innerHTML = data;
         });
-    fetch('html-sections/navbar.html')
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-        });
 </script>
 </html>
-<!-- TODO:
-- Photo of Charlie here in Maine (maybe on a hike)
-- Make about section somewhat personal. “I recently moved to Maine with my wonderful (amazing, incredible, funny, smart, talented, gorgeous) wife” Based in Maine but has clients from all over the U.S. from Florida to Indiana?
-- Why do I do what I do?
-Help small business owners (and non-profits?) focus on the things they really care about by taking care of their finances
-What makes me different from other bookkeepers?
-Personal
-Not only technical, but goal oriented and wants to help clients achieve financial goals in their business
-Cares about small businesses
-honest
-- What he has experience working with/in?
-Quickbooks (quickbooks certified pro advisor)
-Paychex
--->
