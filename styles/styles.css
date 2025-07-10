@@ -16,3 +16,17 @@ h1 {
 .button:hover {
     background-color: #A6D9FF !important;
 }
+
+.banner-photo {
+    background-position: center;
+}
+
+.page-title {
+    font-size: 3rem !important;
+}
+
+@media screen and (max-width: 960px) {
+    .banner-photo {
+        background-position: bottom;
+    }
+}
