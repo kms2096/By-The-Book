@@ -1,10 +1,4 @@
 TODO:
-- make titles on top of page 3rem
-- fix the color of navbar hamburger menu
-- get texts from makayla
-- get calendly link
 - fix buttons border
 - fix home page
 - make services into a table
-- move top text to center
-- make footer mobile friendly

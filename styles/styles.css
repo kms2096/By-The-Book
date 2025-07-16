@@ -4,7 +4,8 @@ h2 {
     font-family: 'Platypi', serif;
 }
 
-h1 {
+h1,
+#connect-text {
     font-family: 'Electrolize', serif !important;
 }
 
@@ -25,8 +26,54 @@ h1 {
     font-size: 3rem !important;
 }
 
+#profile-pic {
+    float: right;
+}
+
+.navbar-item {
+    font-size: medium;
+    color: white;
+}
+
 @media screen and (max-width: 960px) {
     .banner-photo {
         background-position: bottom;
+    }
+
+    #profile-pic {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+
+    .navbar-item {
+        color: black !important;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .navbar-burger {
+        color: white;
+    }
+    
+    .responsive-table,
+    .responsive-table tbody,
+    .responsive-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .responsive-table td {
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+        border: none; /* Optional: remove borders on mobile */
+        border-bottom: 1px solid #ccc;
+    }
+
+    .responsive-table td:last-child {
+        border-bottom: none;
     }
 }
