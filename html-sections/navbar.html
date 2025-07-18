@@ -1,49 +1,47 @@
-<!-- Navbar -->
-<nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #B1D6FB;">
+<nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: #b1d6fb; position: relative;">
+    <!-- Left (Brand and Hamburger) -->
     <div class="navbar-brand">
+        <a href="https://calendly.com/charles-btbbookkeeping/free-consultation" target="_blank" class="navbar-item">
+            <span class="button is-link has-background-link" style="position: sticky; top: 0;">
+                Schedule Meeting
+            </span>
+        </a>
+
         <!-- Hamburger menu -->
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
         </a>
     </div>
 
-    <div id="navMenu" class="navbar-menu">
-        <div class="navbar-start">
-            <a href="https://calendly.com/charles-btbbookkeeping/free-consultation" target="blank" class="navbar-item nav-btn">
-                <span class="button is-link has-background-link" style="position: sticky; top: 0;">
-                    Schedule Meeting
-                </span>
-            </a>
-        </div>
-        <div class="navbar-end">
-            <a class="navbar-item" href="../test.html">
-                Home
-            </a>
-            <a class="navbar-item" href="../about.html">
-                About
-            </a>
-            <a class="navbar-item" href="../services.html">
-                Services
-            </a>
-            <a class="navbar-item" href="../faq.html">
-                FAQs
-            </a>
-            <a href="#contact" class="navbar-item nav-btn">
-                <span class="button is-link has-background-link">
-                    Connect
-                </span>
-            </a>
-            <style>
-                .navbar-item:hover {
-                    background-color: #A6D9FF !important;
-                }
+    <!-- Centered Title, using flex overlay that doesn't interfere with layout -->
+    <div class="navbar-title-overlay" style="
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    ">
+        <h1 id="company-name" class="page-title title has-text-white" style="margin: 0; pointer-events: auto;">
+            By the Book Bookkeeping
+        </h1>
+    </div>
 
-                .is-link:hover {
-                    background-color: transparent;
-                }
-            </style>
+    <!-- Right (Menu links) -->
+    <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+            <a class="navbar-item" href="../index.html">Home</a>
+            <a class="navbar-item" href="../about.html">About</a>
+            <a class="navbar-item" href="../services.html">Services</a>
+            <a class="navbar-item" href="../faq.html">FAQs</a>
+            <a href="#contact" class="navbar-item nav-btn">
+                <span class="button is-link has-background-link">Connect</span>
+            </a>
         </div>
     </div>
 </nav>

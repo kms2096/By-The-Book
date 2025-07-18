@@ -9,13 +9,26 @@ h1,
     font-family: 'Electrolize', serif !important;
 }
 
+.responsive-table td {
+    width: 33%;
+}
+
 .button {
     background-color: white !important;
     color: black !important;
 }
 
-.button:hover {
+.navbar-item:hover {
     background-color: #A6D9FF !important;
+}
+
+.navbar-item.nav-btn:hover {
+    background-color: transparent !important; /* disable hover background for this item */
+}
+
+.is-link:hover {
+    background-color: #3273dc !important; /* keep blue hover for the button */
+    color: white !important;
 }
 
 .banner-photo {
@@ -23,7 +36,7 @@ h1,
 }
 
 .page-title {
-    font-size: 3rem !important;
+    font-size: 3.5rem !important;
 }
 
 #profile-pic {
@@ -35,7 +48,21 @@ h1,
     color: white;
 }
 
+.home-page-img {
+    margin: auto; 
+    display: block; 
+    width: 35%;
+}
+
+#contact {
+    padding: 0 3rem;
+}
+
 @media screen and (max-width: 960px) {
+    #company-name {
+        display: none;
+    }
+
     .banner-photo {
         background-position: bottom;
     }
@@ -75,5 +102,9 @@ h1,
 
     .responsive-table td:last-child {
         border-bottom: none;
+    }
+
+    .home-page-img {
+        width: auto;
     }
 }
