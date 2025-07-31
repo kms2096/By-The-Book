@@ -1,3 +1,5 @@
 TODO:
 - make services into a table
 - center navbar text
+- fix name so it sizes down
+- fix on mobile, can move left and right

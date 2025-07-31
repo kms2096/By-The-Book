@@ -35,10 +35,6 @@ h1,
     background-position: center;
 }
 
-.page-title {
-    font-size: 3.5rem !important;
-}
-
 #profile-pic {
     float: right;
 }
@@ -58,7 +54,7 @@ h1,
     padding: 0 3rem;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1020px) {
     #company-name {
         display: none;
     }
@@ -107,4 +103,25 @@ h1,
     .home-page-img {
         width: auto;
     }
+}
+
+/* For larger screens, set a fixed font size */
+@media screen and (min-width: 1500px) {
+    .page-title {
+        font-size: 3.5rem; /* Fixed font size for very large screens */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .page-title {
+        display: none;
+    }
+}
+
+/* For small screens, reduce the font size a bit */
+@media screen and (max-width: 1500px) {
+    .page-title {
+        font-size: 1.5rem; /* Adjust font size for small devices */
+    }
+    
 }
