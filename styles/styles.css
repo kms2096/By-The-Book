@@ -105,10 +105,9 @@ h1,
     }
 }
 
-/* For larger screens, set a fixed font size */
 @media screen and (min-width: 1500px) {
     .page-title {
-        font-size: 3.5rem; /* Fixed font size for very large screens */
+        font-size: 3.5rem;
     }
 }
 
@@ -118,10 +117,9 @@ h1,
     }
 }
 
-/* For small screens, reduce the font size a bit */
 @media screen and (max-width: 1500px) {
     .page-title {
-        font-size: 1.5rem; /* Adjust font size for small devices */
+        font-size: 1.5rem;
     }
     
 }
